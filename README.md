@@ -6,8 +6,9 @@ This project fine-tunes a Seismic Foundation Model (SFM) for 2D fault segmentati
 
 - **SFM code:** <https://github.com/shenghanlin/seismicfoundationmodel>
 - **Pretrained SFM checkpoint:** <https://drive.google.com/drive/folders/1RObf_J-37VCEALgOikMWODBlhz73IHIU?usp=sharing>
+- **Preprocessed THEBE patch cache:** <https://drive.google.com/drive/folders/1rATqFLymwH5w9aLsvt0GO8lLI9N7wa3-?usp=sharing>
 
-The GitHub repository provides the SFM implementation and `models_Segmentation.py`. The Google Drive folder provides the pretrained checkpoint used by the notebooks, such as `SFM-Base.pth`.
+The GitHub repository provides the SFM implementation and `models_Segmentation.py`. The first Google Drive folder provides the pretrained checkpoint, while the second contains the processed 96 × 96 THEBE training and validation patches.
 
 ## Main Files
 
@@ -25,7 +26,7 @@ The GitHub repository provides the SFM implementation and `models_Segmentation.p
 
 ### 1. Prepare the files
 
-Download the SFM repository and checkpoint, then place the required files in accessible folders. The existing patch cache should contain:
+Download the SFM repository, pretrained checkpoint, and [preprocessed THEBE patch cache](https://drive.google.com/drive/folders/1rATqFLymwH5w9aLsvt0GO8lLI9N7wa3-?usp=sharing). Extract or place the cache files inside one `patch_cache` folder containing:
 
 ```text
 train_10k_valid_seismic_images.npy
